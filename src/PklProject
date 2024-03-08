@@ -5,6 +5,6 @@ local githubUser = "chrisvander"
 package {
   name = "pkl-biome"
   baseUri = "package://pkg.pkl-lang.org/github.com/\(githubUser)/\(name)" 
-  version = read("file:version.txt").text
+  version = read("file:version.txt").text.trim()
   packageZipUrl = "https://github.com/\(githubUser)/\(name)/releases/download/\(name)@\(version)/\(name)@\(version).zip"
 }
