@@ -32,4 +32,6 @@ jobs:
         if: ${{ steps.release.outputs.release_created }}
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        run: VERSION=$(cat version.txt) gh release upload ${{ steps.release.outputs.tag_name }} .out/pkl-biome@$VERSION/*
+        run: |
+          export VERSION="${${{ steps.release.outputs.tag_name }}:1}"
+          gh release upload ${{ steps.release.outputs.tag_name }} .out/pkl-biome@$VERSION/*
