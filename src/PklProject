@@ -1,0 +1,10 @@
+amends "pkl:Project"
+
+hidden githubUser = "chrisvander"
+
+package {
+  name = "pkl-biome"
+  baseUri = "package://pkg.pkl-package.org/github.com/\(githubUser)/\(name)" 
+  version = "1.0.0" 
+  packageZipUrl = "https://github.com/\(githubUser)/\(name)/releases/download/\(name)@\(version)/\(name)@\(version).zip"
+}
