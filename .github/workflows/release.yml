@@ -18,8 +18,18 @@ jobs:
         with:
           release-type: simple
           include-v-in-tag: false
+      - name: Install Pkl
+        run: |-
+          curl -L -o pkl https://github.com/apple/pkl/releases/download/0.25.2/pkl-linux-amd64
+          chmod +x pkl
+          ./pkl --version
+          mkdir -p $HOME/.local/bin
+          mv pkl $HOME/.local/bin/pkl
+          echo "$HOME/.local/bin" >> $GITHUB_PATH
+      - name: Build Package
+        run: pkl project package src
       - name: Upload Release Artifact
         if: ${{ steps.release.outputs.release_created }}
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        run: gh release upload ${{ steps.release.outputs.tag_name }} ./.out/some-build-artifact.zip
+        run: VERSION=$(cat version.txt) gh release upload ${{ steps.release.outputs.tag_name }} .out/pkl-biome@$VERSION/*
