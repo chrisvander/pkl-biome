@@ -1,10 +1,13 @@
 amends "pkl:Project"
 
-hidden githubUser = "chrisvander"
+local githubUser = "chrisvander"
 
 package {
   name = "pkl-biome"
   baseUri = "package://pkg.pkl-package.org/github.com/\(githubUser)/\(name)" 
-  version = "1.0.0" 
+  version = read("prop:VERSION")
   packageZipUrl = "https://github.com/\(githubUser)/\(name)/releases/download/\(name)@\(version)/\(name)@\(version).zip"
+  authors {
+    "Christian van der Loo"
+  }
 }
