@@ -18,7 +18,6 @@ jobs:
         id: release
         with:
           release-type: simple
-          include-v-in-tag: false
       - name: Install Pkl
         run: |-
           curl -L -o pkl https://github.com/apple/pkl/releases/download/0.25.2/pkl-linux-amd64
