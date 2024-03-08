@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.1.2](https://github.com/chrisvander/pkl-biome/compare/v0.1.1...v0.1.2) (2024-03-08)
+
+
+### Bug Fixes
+
+* version tag ([1c80548](https://github.com/chrisvander/pkl-biome/commit/1c805486a5a1c164e7f5eb833076a29d9ddd5e25))
+
 ## [0.1.1](https://github.com/chrisvander/pkl-biome/compare/v0.1.0...v0.1.1) (2024-03-08)
 
 
