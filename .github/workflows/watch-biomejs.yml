@@ -1,0 +1,24 @@
+name: Get latest Biome.js version
+on:
+  schedule:
+    - cron:  '0 10 * * *'
+jobs:
+  get-version:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Fetch release version
+        id: release-version
+        run: |
+          VERSION=$(curl -sL https://api.github.com/repos/biomejs/biome/releases/latest | jq -r ".tag_name" | sed 's/^[^0-9.]*//g')
+          echo "version=$VERSION" >> "$GITHUB_OUTPUT"
+      - name: Check for modified files
+        id: git-check
+        run: echo ::set-output name=modified::$([ -z "`git status --porcelain`" ] && echo "false" || echo "true")
+      - name: Commit latest release version
+        if: steps.git-check.outputs.modified == 'true'
+        run: |
+          git config --global user.name 'Christian van der Loo'
+          git config --global user.email 'chrisvander@users.noreply.github.com'
+          git commit -m "chore: release ${{ steps.release-version.outputs.version }}" -m "Release-As: ${{ steps.release-version.outputs.version }}"
+          git push
