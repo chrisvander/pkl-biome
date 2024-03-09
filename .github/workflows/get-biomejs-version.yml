@@ -9,7 +9,10 @@ jobs:
   get-version:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+          fetch-depth: 0
       - name: Fetch release version
         id: release-version
         run: |
@@ -22,4 +25,8 @@ jobs:
           git config --global user.name 'Christian van der Loo'
           git config --global user.email 'chrisvander@users.noreply.github.com'
           git commit --allow-empty -m "chore: release ${{ steps.release-version.outputs.version }}" -m "Release-As: ${{ steps.release-version.outputs.version }}"
-          git push
+      - name: Push changes
+        uses: ad-m/github-push-action@master
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          branch: ${{ github.ref }}
