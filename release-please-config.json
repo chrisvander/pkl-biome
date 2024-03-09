@@ -1,0 +1,10 @@
+{
+	"packages": {
+		".": {
+			"changelog-path": "CHANGELOG.md",
+			"release-type": "simple",
+			"include-v-in-tag": false,
+			"tag-separator": "pkl-biome@"
+		}
+	}
+}
