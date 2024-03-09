@@ -1,0 +1,9 @@
+module biome.Git
+
+amends "./Biome.pkl"
+
+vcs {
+  enabled = true
+  clientKind = "git"
+  useIgnoreFile = true
+}

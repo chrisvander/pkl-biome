@@ -8,7 +8,7 @@ pnpm = "latest"
 
 [tasks.pull-schema]
 run = """
-pkl eval package://pkg.pkl-lang.org/pkl-pantry/org.json_schema.contrib@1.0.3#/generate.pkl -m src -p source=\"https://biomejs.dev/schemas/$(cat version.txt)/schema.json\"
-cat src/Schema.pkl | sed 's/(\\([A-Za-z0-9]*\\)|Any)/\\1/g' | sed 's/module Schema/module Biome/g' > src/Biome.pkl
-rm src/Schema.pkl
+pkl eval package://pkg.pkl-lang.org/pkl-pantry/org.json_schema.contrib@1.0.3#/generate.pkl -m src/internal -p source=\"https://biomejs.dev/schemas/$(cat version.txt)/schema.json\"
+cat src/internal/Schema.pkl | sed 's/(\\([A-Za-z0-9]*\\)|Any)/\\1/g' > src/internal/_Schema.pkl
+mv src/internal/_Schema.pkl src/internal/Schema.pkl
 """

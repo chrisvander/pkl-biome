@@ -1,0 +1,28 @@
+module biome.Default
+
+amends "./internal/Schema.pkl"
+
+organizeImports {
+  enabled = true
+}
+
+formatter {
+  enabled = true
+}
+
+linter {
+  enabled = true
+  rules {
+    recommended = true
+  }
+}
+
+output {
+  text = "Use multiple file mode, e.g. `pkl eval -m . <file>`, to output a `biome.json` file."
+  files {
+    ["./biome.json"] {
+      value = module
+      renderer = new JsonRenderer {}
+    }
+  }
+}
