@@ -15,9 +15,10 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - uses: jdx/mise-action@v2
+        with: 
+          experimental: true
       - name: Build Package
         run: |
-          mise settings set experimental true
           mise run pull-schema
           pkl project package src
       - name: Create Release
