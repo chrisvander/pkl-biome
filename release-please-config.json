@@ -1,0 +1,10 @@
+{
+  "release-type": "simple"
+  "packages": {
+    ".": {
+      "package-name": "biome-pkl",
+      "include-v-in-tag": false,
+      "tag-separator": "@"
+    },
+  }
+}
