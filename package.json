@@ -1,0 +1,12 @@
+{
+  "name": "pkl-biome",
+  "description": "A [Pkl](https://pkl-lang.org) module for [Biome.js](https://biomejs.dev) configuration.",
+  "devDependencies": {
+    "@commitlint/config-conventional": "^19.0.3",
+    "commitlint": "^19.0.3",
+    "husky": "^9.0.11"
+  },
+  "scripts": {
+    "prepare": "husky"
+  }
+}

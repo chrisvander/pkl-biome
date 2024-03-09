@@ -1,0 +1,4 @@
+[tools]
+pkl = "latest"
+node = "18"
+pnpm = "latest"
