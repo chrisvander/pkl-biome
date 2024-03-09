@@ -1,5 +1,5 @@
 [plugins]
-pkl = "https://github.com/chrisvander/asdf-pkl.git"
+pkl = "https://github.com/mise-plugins/asdf-pkl.git"
 
 [tools]
 pkl = "latest"
