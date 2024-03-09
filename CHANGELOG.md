@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.6.0](https://github.com/chrisvander/pkl-biome/compare/v1.6.0...v1.6.0) (2024-03-09)
+
+
+### Miscellaneous Chores
+
+* release 1.6.0 ([f87547d](https://github.com/chrisvander/pkl-biome/commit/f87547dd6e1b8d28f9d455a6acd681e7898b36ce))
+
 ## [1.6.0](https://github.com/chrisvander/pkl-biome/compare/v0.1.2...v1.6.0) (2024-03-09)
 
 
