@@ -1,5 +1,20 @@
 # Changelog
 
+## [1.6.0](https://github.com/chrisvander/pkl-biome/compare/v0.1.2...v1.6.0) (2024-03-09)
+
+
+### Bug Fixes
+
+* add plugin def ([07e0573](https://github.com/chrisvander/pkl-biome/commit/07e0573d26f2e81317ef2f8bf959520c42d70ffb))
+* add pull-schema task ([508f5d0](https://github.com/chrisvander/pkl-biome/commit/508f5d059aa725d291fbf58700131c04a53f839a))
+* push cron github action ([88006dd](https://github.com/chrisvander/pkl-biome/commit/88006dde7e8e69fceafc59f49bcccf599ab071e4))
+
+
+### Miscellaneous Chores
+
+* release 1.6.0 ([54b149a](https://github.com/chrisvander/pkl-biome/commit/54b149a30c76a8e8ebec9915638e4a3b3048869a))
+* release 1.6.0 ([6a38d3b](https://github.com/chrisvander/pkl-biome/commit/6a38d3b1b8849cecc6e46a4621065b3de131d73f))
+
 ## [0.1.2](https://github.com/chrisvander/pkl-biome/compare/v0.1.1...v0.1.2) (2024-03-08)
 
 
