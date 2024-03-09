@@ -15,10 +15,13 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - uses: jdx/mise-action@v2
-      - run: mise run pull-schema
       - name: Build Package
-        run: pkl project package src
-      - uses: google-github-actions/release-please-action@v4
+        run: |
+          mise settings set experimental true
+          mise run pull-schema
+          pkl project package src
+      - name: Create Release
+        uses: google-github-actions/release-please-action@v4
         id: release
         with:
           release-type: simple
