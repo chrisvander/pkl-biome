@@ -2,7 +2,7 @@
 	"release-type": "simple",
 	"packages": {
 		".": {
-			"package-name": "biome-pkl",
+			"package-name": "pkl-biome",
 			"include-v-in-tag": false,
 			"tag-separator": "@"
 		}

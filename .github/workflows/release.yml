@@ -31,3 +31,4 @@ jobs:
         run: |
           TAG=${{ steps.release.outputs.tag_name }}
           gh release upload ${{ steps.release.outputs.tag_name }} .out/$TAG/*
+          gh release edit ${{ steps.release.outputs.tag_name }} -t ${{ steps.release.outputs.tag_name }}
