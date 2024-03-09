@@ -20,6 +20,8 @@ jobs:
       - name: Create Release
         uses: google-github-actions/release-please-action@v4
         id: release
+        with:
+          skip-github-pull-request: ${{ !contains(github.event.head_commit.message, "chore(main)") && !contains(github.event.head_commit.message, "release biome-pkl") }}
       - name: Build Package
         run: |
           mise run pull-schema
