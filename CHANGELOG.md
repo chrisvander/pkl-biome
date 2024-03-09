@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.7.0](https://github.com/chrisvander/pkl-biome/compare/pkl-biome@1.6.0...pkl-biome@1.7.0) (2024-03-09)
+
+
+### Features
+
+* added BiomeDefault and BiomeGit separate files ([ebdc323](https://github.com/chrisvander/pkl-biome/commit/ebdc323c80a23446b7dfb1c9ca5812cf72ca6347))
+
 ## [1.6.0](https://github.com/chrisvander/pkl-biome/compare/pkl-biome-v1.6.0...pkl-biome@1.6.0) (2024-03-09)
 
 
