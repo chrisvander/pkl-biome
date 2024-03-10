@@ -1,5 +1,8 @@
 # pkl-biome
 
+[![Check Biome.js Version](https://github.com/chrisvander/pkl-biome/actions/workflows/get-biomejs-version.yml/badge.svg)](https://github.com/chrisvander/pkl-biome/actions/workflows/get-biomejs-version.yml)
+[![Build & Release](https://github.com/chrisvander/pkl-biome/actions/workflows/release.yml/badge.svg)](https://github.com/chrisvander/pkl-biome/actions/workflows/release.yml)
+
 A [Pkl](https://pkl-lang.org) module for [Biome.js](https://biomejs.dev) configuration.
 
 ## Usage
