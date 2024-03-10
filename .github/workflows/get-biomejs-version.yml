@@ -1,4 +1,4 @@
-name: Get latest Biome.js version
+name: Check Biome.js Version
 on:
   schedule:
     - cron:  '0 10 * * *'
