@@ -16,8 +16,7 @@ and then specify your configuration below. With the VSCode Pkl extension, you'll
 
 You can change the file name from `BiomeDefault.pkl` to `BiomeGit.pkl` if you want a Biome.js configuration with boilerplate Git support.
 
-To build, run `pkl eval biome.pkl -m .`
-
+To build, run `pkl eval biome.pkl -m .`, and it will create a `biome.json` in the same directory.
 ## Development
 
 This project uses [Mise](https://mise.jdx.dev) to handle dependencies. To install all dependencies, run `mise install`, followed by `pnpm i`.
