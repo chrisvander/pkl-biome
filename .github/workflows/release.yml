@@ -20,7 +20,7 @@ jobs:
         uses: google-github-actions/release-please-action@v4
         id: release
         with:
-          skip-github-pull-request: ${{ !contains(github.event.head_commit.message, 'chore(main)') && !contains(github.event.head_commit.message, 'release biome-pkl') }}
+          skip-github-pull-request: ${{ !contains(github.event.head_commit.message, 'release biome-pkl') }}
       - name: Build Package
         run: |
           mise run pull-schema
@@ -33,3 +33,7 @@ jobs:
           TAG=${{ steps.release.outputs.tag_name }}
           gh release upload ${{ steps.release.outputs.tag_name }} .out/$TAG/*
           gh release edit ${{ steps.release.outputs.tag_name }} -t ${{ steps.release.outputs.tag_name }}
+      - name: Approve Release PR
+        uses: hmarr/auto-approve-action@v4
+        with:
+          pull-request-number: ${{ steps.release.outputs }}
