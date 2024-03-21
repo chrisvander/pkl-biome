@@ -31,7 +31,3 @@ jobs:
           TAG=${{ steps.release.outputs.tag_name }}
           gh release upload ${{ steps.release.outputs.tag_name }} .out/$TAG/*
           gh release edit ${{ steps.release.outputs.tag_name }} -t ${{ steps.release.outputs.tag_name }}
-      - name: Approve Release PR
-        uses: hmarr/auto-approve-action@v4
-        with:
-          pull-request-number: ${{ steps.release.outputs }}
