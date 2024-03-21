@@ -1,5 +1,33 @@
 # Changelog
 
+## [1.6.1](https://github.com/chrisvander/pkl-biome/compare/pkl-biome@1.6.0...pkl-biome@1.6.1) (2024-03-21)
+
+
+### Features
+
+* create autoapprove.yml ([3e6bf0a](https://github.com/chrisvander/pkl-biome/commit/3e6bf0ab268b0a1eec0f3f7e0cb120d24e9e812a))
+* release 1.6.1 ([50d7765](https://github.com/chrisvander/pkl-biome/commit/50d7765f08bcd2a521c33371d63fcc9759af88ce))
+
+
+### Bug Fixes
+
+* release.yml ([5621aee](https://github.com/chrisvander/pkl-biome/commit/5621aeefd6f60a13c304b8975c35b8d68a7deb88))
+* release.yml ([ebf7465](https://github.com/chrisvander/pkl-biome/commit/ebf74652f88b6ecf0187dfec5cf8a44e92b5557a))
+* update autoapprove.yml ([aa511fa](https://github.com/chrisvander/pkl-biome/commit/aa511faa53377904dcbf8ae8ebedc8090ba83705))
+* update get-biomejs-version.yml to “feat” version bumps ([53c9910](https://github.com/chrisvander/pkl-biome/commit/53c9910395fd91964d8f0602bbd40dd02d6ecafc))
+
+
+### Miscellaneous Chores
+
+* release 1.6.1 ([f738d50](https://github.com/chrisvander/pkl-biome/commit/f738d500f4d0f228bf64e4ba126e29021b0963d6))
+* release 1.6.1 ([cf1737a](https://github.com/chrisvander/pkl-biome/commit/cf1737a325b807a47a86ec942411d4dbc56e7a09))
+* release 1.6.1 ([70341cf](https://github.com/chrisvander/pkl-biome/commit/70341cfa3f1a21d2960923b8d9eaa97790a2629d))
+* release 1.6.1 ([d484806](https://github.com/chrisvander/pkl-biome/commit/d484806d3b777c5f6715957fbe94862852144b28))
+* release 1.6.1 ([5f3d9c1](https://github.com/chrisvander/pkl-biome/commit/5f3d9c16d70985785f60a9ca09b0db71c98a7412))
+* release 1.6.1 ([b004a99](https://github.com/chrisvander/pkl-biome/commit/b004a99f28c84f0bc767ab5dd3822d41c5c677fa))
+* release 1.6.1 ([f1745ab](https://github.com/chrisvander/pkl-biome/commit/f1745ab654167becc00f503e5fb687ba53319e36))
+* release 1.6.1 ([eaae903](https://github.com/chrisvander/pkl-biome/commit/eaae9036fb1d2792686050cc223761ad8bc5cb6b))
+
 ## [1.6.0](https://github.com/chrisvander/pkl-biome/compare/pkl-biome-v1.6.0...pkl-biome@1.6.0) (2024-03-09)
 
 
