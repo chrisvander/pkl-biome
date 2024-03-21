@@ -7,6 +7,6 @@ jobs:
     runs-on: ubuntu-latest
     permissions:
       pull-requests: write${{  }}
-    if: github.actor == 'chrisvander' && contains(github.event.pull_request.title, "release pkl-biome")
+    if: github.actor == 'github-actions' && contains(github.event.pull_request.title, "release pkl-biome")
     steps:
       - uses: hmarr/auto-approve-action@v4
