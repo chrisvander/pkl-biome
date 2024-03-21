@@ -25,7 +25,7 @@ jobs:
         run: |
           git config --global user.name 'Christian van der Loo'
           git config --global user.email 'chrisvander@users.noreply.github.com'
-          git commit --allow-empty -m "chore: release ${{ steps.release-version.outputs.version }}" -m "Release-As: ${{ steps.release-version.outputs.version }}"
+          git commit --allow-empty -m "feat: release ${{ steps.release-version.outputs.version }}" -m "Release-As: ${{ steps.release-version.outputs.version }}"
       - name: Push changes
         uses: ad-m/github-push-action@master
         with:
