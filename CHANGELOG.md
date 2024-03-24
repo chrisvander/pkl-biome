@@ -1,5 +1,14 @@
 # Changelog
 
+## [1.6.2](https://github.com/chrisvander/pkl-biome/compare/pkl-biome@1.6.1...pkl-biome@1.6.2) (2024-03-24)
+
+
+### Features
+
+* release 1.6.2 ([6857d01](https://github.com/chrisvander/pkl-biome/commit/6857d01bd23d2c020fd31d94286e89db50726e84))
+* release 1.6.2 ([4d8c276](https://github.com/chrisvander/pkl-biome/commit/4d8c276dee9309ccee317cea06f1e52697699797))
+* release 1.6.2 ([d0d271b](https://github.com/chrisvander/pkl-biome/commit/d0d271b0ae930121c18bac90ccfd67c716b11c4b))
+
 ## [1.6.1](https://github.com/chrisvander/pkl-biome/compare/pkl-biome@1.6.0...pkl-biome@1.6.1) (2024-03-21)
 
 
