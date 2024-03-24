@@ -1,6 +1,6 @@
 module biome.Git
 
-amends "./Biome.pkl"
+amends "./BiomeDefault.pkl"
 
 vcs {
   enabled = true
