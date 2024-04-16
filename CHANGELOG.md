@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.7.0](https://github.com/chrisvander/pkl-biome/compare/pkl-biome@1.6.4...pkl-biome@1.7.0) (2024-04-16)
+
+
+### Features
+
+* release 1.7.0 ([36190d7](https://github.com/chrisvander/pkl-biome/commit/36190d7d6c43e96690cc7a4dacd4a7cb2547004e))
+
 ## [1.6.4](https://github.com/chrisvander/pkl-biome/compare/pkl-biome@1.6.3...pkl-biome@1.6.4) (2024-04-04)
 
 
