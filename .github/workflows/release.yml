@@ -34,5 +34,7 @@ jobs:
       - name: Approve PR
         uses: hmarr/auto-approve-action@v4
         if: ${{ steps.release.outputs.prs_created }}
+        env:
+          ACTIONS_STEP_DEBUG: true
         with:
-          pull_request_number: ${{ steps.release.outputs.pr.number }}
+          pull-request-number: ${{ steps.release.outputs.pr.number }}
