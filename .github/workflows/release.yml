@@ -37,4 +37,4 @@ jobs:
         env:
           ACTIONS_STEP_DEBUG: true
         with:
-          pull-request-number: ${{ steps.release.outputs.pr.number }}
+          pull-request-number: ${{ fromJSON(steps.release.outputs.pr).number }}
