@@ -31,9 +31,11 @@ jobs:
           TAG=${{ steps.release.outputs.tag_name }}
           gh release upload ${{ steps.release.outputs.tag_name }} .out/$TAG/*
           gh release edit ${{ steps.release.outputs.tag_name }} -t ${{ steps.release.outputs.tag_name }}
+          gh pr merge --auto
       - name: Approve PR
-        uses: hmarr/auto-approve-action@v4
         if: ${{ steps.release.outputs.prs_created == 'true' }}
-        with:
-          github-token: ${{ secrets.PAT_TOKEN }}
-          pull-request-number: ${{ fromJSON(steps.release.outputs.pr).number }}
+        env:
+          GITHUB_TOKEN: ${{ secrets.PAT_TOKEN }}
+          PR_NUMBER: ${{ fromJSON(steps.release.outputs.pr).number }}
+        run:
+          gh pr merge -m $PR_NUMBER
