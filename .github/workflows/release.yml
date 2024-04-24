@@ -35,5 +35,5 @@ jobs:
         uses: hmarr/auto-approve-action@v4
         if: ${{ steps.release.outputs.prs_created == 'true' }}
         with:
-          github-token: ${{ secrets.GITHUB_TOKEN }}
+          github-token: ${{ secrets.PAT_TOKEN }}
           pull-request-number: ${{ fromJSON(steps.release.outputs.pr).number }}
