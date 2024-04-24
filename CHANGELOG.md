@@ -1,5 +1,18 @@
 # Changelog
 
+## [1.7.1](https://github.com/chrisvander/pkl-biome/compare/pkl-biome@1.7.0...pkl-biome@1.7.1) (2024-04-24)
+
+
+### Features
+
+* release 1.7.1 ([3241f03](https://github.com/chrisvander/pkl-biome/commit/3241f03db07cd3f66c2f1c2525f5f1df249afe4e))
+* release 1.7.1 ([7976f81](https://github.com/chrisvander/pkl-biome/commit/7976f815384d26298ddf884f81a3dd1d8f36dac5))
+
+
+### Bug Fixes
+
+* ensure use of correct pr number release.yml ([8b2ff04](https://github.com/chrisvander/pkl-biome/commit/8b2ff0417e4d0bdb9acdf1ddddabad1d56d615ad))
+
 ## [1.7.0](https://github.com/chrisvander/pkl-biome/compare/pkl-biome@1.6.4...pkl-biome@1.7.0) (2024-04-16)
 
 
