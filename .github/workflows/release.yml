@@ -33,7 +33,7 @@ jobs:
           gh release edit ${{ steps.release.outputs.tag_name }} -t ${{ steps.release.outputs.tag_name }}
       - name: Approve PR
         uses: hmarr/auto-approve-action@v4
-        if: ${{ steps.release.outputs.prs_created }}
+        if: ${{ steps.release.outputs.prs_created == 'true' }}
         env:
           ACTIONS_STEP_DEBUG: true
         with:
