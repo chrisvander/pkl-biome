@@ -1,5 +1,15 @@
 # Changelog
 
+## [1.8.2](https://github.com/chrisvander/pkl-biome/compare/pkl-biome@1.8.1...pkl-biome@1.8.2) (2024-06-23)
+
+
+### Features
+
+* release 1.8.2 ([27ff09d](https://github.com/chrisvander/pkl-biome/commit/27ff09ddd9b60aacf6cd4f8a1fc9e50ff79f576c))
+* release 1.8.2 ([a88b8de](https://github.com/chrisvander/pkl-biome/commit/a88b8de42883cbc3d7340867d7f4b1a26a3feed6))
+* release 1.8.2 ([a757531](https://github.com/chrisvander/pkl-biome/commit/a7575316df2f649521f90f246aa0fff48dc52a3e))
+* release 1.8.2 ([da4cc09](https://github.com/chrisvander/pkl-biome/commit/da4cc096816545db57068675d6e7536877e51d3c))
+
 ## [1.8.1](https://github.com/chrisvander/pkl-biome/compare/pkl-biome@1.8.0...pkl-biome@1.8.1) (2024-06-11)
 
 
