@@ -2,7 +2,7 @@
 pkl = "https://github.com/mise-plugins/asdf-pkl.git"
 
 [tools]
-pkl = "latest"
+pkl = "0.25.2"
 node = "18"
 pnpm = "latest"
 
