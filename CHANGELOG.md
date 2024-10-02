@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.9.3](https://github.com/chrisvander/pkl-biome/compare/pkl-biome@1.9.2...pkl-biome@1.9.3) (2024-10-02)
+
+
+### Features
+
+* release 1.9.3 ([85261dc](https://github.com/chrisvander/pkl-biome/commit/85261dc5152bdba589cdcd4f4e7beb5c747b4416))
+
 ## [1.9.2](https://github.com/chrisvander/pkl-biome/compare/pkl-biome@1.9.1...pkl-biome@1.9.2) (2024-09-20)
 
 
